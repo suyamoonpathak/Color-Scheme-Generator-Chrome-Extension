@@ -1,0 +1,181 @@
+/* apply a reset to remove browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* set up basic styling for the page */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ECF2FF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* add a nice gradient background to the app */
+  #app {
+    background-color: #6E85B7;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+  }
+  
+  /* style the top section of the app */
+  #top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* style the seed color input */
+  #seed-color {
+    width: 80px;
+    height: 80px;
+    border: none;
+    margin-left: -10px;
+    /* border-radius: 10px; */
+  }
+
+  .copied{
+    color:#5cb85c;
+    background-color: white;
+    width: 80px;
+    height: 37px;
+    text-align: center;
+    padding:10px;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 10px auto;
+
+  }
+  
+  /* style the scheme select dropdown */
+  #scheme {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 25px;
+    margin-right: 10px;
+    
+  }
+  
+  /* style the get color scheme button */
+  #btn-get-scheme {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    width: 230px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #btn-get-scheme:hover {
+    background-color: #468c46;
+  }
+  
+  /* style the bottom section of the app */
+  #bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* style the color swatches */
+  div[id^='color-'] {
+    width: 100px;
+    height: 300px;
+    margin: 0 10px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    transition: box-shadow 0.2s ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 22.5%;
+    cursor: pointer;
+    
+  }
+  
+  div[id^='color-']:hover {
+    border: white solid 1px;
+  }
+  
+  /* style each individual color swatch */
+  #color-1 {
+    background-color: #E6D72A;
+  }
+  
+  #color-2 {
+    background-color: #F26419;
+  }
+  
+  #color-3 {
+    background-color: #F2A73D;
+  }
+  
+  #color-4 {
+    background-color: #F2E93D;
+  }
+  
+  #color-5 {
+    background-color: #E6F23D;
+  }
+
+  #col1{
+    display: none;
+  }
+  #col2{
+    display: none;
+  }
+  #col3{
+    display: none;
+  }
+  #col4{
+    display: none;
+  }
+  #col5{
+    display: none;
+  }
+  
+  input[type="color"] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #headingTitle{
+    color:#343232;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  select:focus {
+    outline: none;
+  }

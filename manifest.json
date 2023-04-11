@@ -1,0 +1,19 @@
+{
+    "name": "Color Scheme Generator",
+    "version": "1.0",
+    "description": "This is a color scheme generator that generates color palettes based on the selected scheme.",
+    "permissions": ["tabs", "activeTab","https://www.thecolorapi.com"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon":"logo.png"
+    },
+    "background": {
+        "scripts": ["script.js"],
+        "persistent": false
+      },
+    "icons":{
+        "128":"logo.png"
+    },
+    "manifest_version":2
+  }
+  

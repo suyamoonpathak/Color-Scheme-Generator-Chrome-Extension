@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="headingTitle">
+        Color Scheme Generator by <a href="https://www.linkedin.com/in/suyamoonpathak" target="_blank">Suyamoon</a>
+    </h1>
+    <div id="app">
+        <div id="top">
+            <input type = "color" id = "seed-color" value="#8338ec">
+            <select name="scheme" id="scheme">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button id = "btn-get-scheme">Get Color Scheme</button>
+        </div>
+        <div id="bottom">
+            <div id="color-1">
+                <div id="colorname1">#E6D72A</div>
+                <div class = "copied" id="col1">
+                    Copied!
+                </div>
+            </div>
+            <div id="color-2">
+                <div id="colorname2">#F26419</div>
+                <div class = "copied" id="col2">
+                    Copied!
+                </div>
+            </div>
+            <div id="color-3">
+                <div id="colorname3">#F2A73D</div>
+                <div class = "copied" id="col3">
+                    Copied!
+                </div>
+            </div>
+            <div id="color-4">
+                <div id="colorname4">#F2E93D</div>
+                <div class = "copied" id="col4">
+                    Copied!
+                </div>
+            </div>
+            <div id="color-5">
+                <div id="colorname5">#E6F23D</div>
+                <div class = "copied" id="col5">
+                    Copied!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
